@@ -4,9 +4,9 @@
     require_once("setup/sdk/AbstractSPID.php");
 
     class SPID_PHP extends \SPID\AbtractSPID {
-        private $spid_auth;
-        private $idps = array();
-        private $purpose = null;
+        protected $spid_auth;
+        protected $idps = array();
+        protected $purpose = null;
 
         function __construct($production=false, $servicename='service') {
             $this->spid_auth = new SimpleSAML\Auth\Simple($servicename);
