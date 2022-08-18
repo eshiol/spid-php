@@ -1222,6 +1222,7 @@ class Setup {
                 case "https://identity.sieltecloud.it": $icon = "spid-sp-access-button/img/spid-idp-sielteid.svg"; break;
                 case "https://spid.register.it": $icon = "spid-sp-access-button/img/spid-idp-spiditalia.svg"; break;
                 case "https://login.id.tim.it/affwebservices/public/saml2sso": $icon = "spid-sp-access-button/img/spid-idp-timid.svg"; break;
+                case "https://spid.teamsystem.com/idp": $icon = "spid-idp-teamsystemid.svg"; break;
             }
 
             $vars = array(

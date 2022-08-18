@@ -349,6 +349,9 @@
 					<li class=\"spid-idp-button-link\" data-idp=\"timid\">
 						<button class=\"idp-button-idp-logo\" name=\"idp\" value=\"TI Trust Technologies srl\" type=\"submit\"><span class=\"spid-sr-only\">Tim ID</span><img class=\"spid-idp-button-logo\" src=\"/{{SERVICENAME}}/spid-sp-access-button/img/spid-idp-timid.svg\" onerror=\"this.src='/{{SERVICENAME}}/spid-sp-access-button/img/spid-idp-timid.png'; this.onerror=null;\" alt=\"Tim ID\" /></button>
 					</li>
+					<li class=\"spid-idp-button-link\" data-idp=\"teamsystemid\">
+						<button class=\"idp-button-idp-logo\" name=\"idp\" value=\"Team System ID s.p.a\" type=\"submit\"><span class=\"spid-sr-only\">Tim ID</span><img class=\"spid-idp-button-logo\" src=\"/{{SERVICENAME}}/spid-sp-access-button/img/spid-idp-teamsystemid.svg\" onerror=\"this.src='/{{SERVICENAME}}/spid-sp-access-button/img/spid-idp-teamsystemid.png'; this.onerror=null;\" alt=\"Team System ID\" /></button>
+					</li>
 					<li class=\"spid-idp-support-link\" data-spidlink=\"info\">
 						<a href=\"https://www.spid.gov.it\">Maggiori informazioni</a>
 					</li>
