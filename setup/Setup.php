@@ -630,6 +630,9 @@ class Setup {
                 $config['adminPassword'] = $_adminPassword;
             }
         }
+        // Add library autoloader
+        require_once($config['installDir'] . '/vendor/simplesamlphp/simplesamlphp/lib/_autoload.php');
+        $adminPassword = \SimpleSAML\Utils\Crypto::pwHash($config['adminPassword']);
 
         if (!isset($config['secretsalt'])) {
             echo "Please insert secretsalt for SimpleSAMLphp (" .
@@ -852,7 +855,7 @@ class Setup {
         echo $colors->getColoredString("\nWrite config file... ", "white");
         $vars = array(
             "{{BASEURLPATH}}" => "'" . $config['serviceName'] . "/'",
-            "{{ADMIN_PASSWORD}}" => "'" . $config['adminPassword'] . "'",
+            "{{ADMIN_PASSWORD}}" => "'" . $adminPassword . "'",
             "{{SECRETSALT}}" => "'" . $config['secretsalt'] . "'",
             "{{TECHCONTACT_NAME}}" => "'" . $config['technicalContactName'] . "'",
             "{{TECHCONTACT_EMAIL}}" => "'" . $config['technicalContactEmail'] . "'",
