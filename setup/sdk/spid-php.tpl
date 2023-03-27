@@ -90,9 +90,7 @@
 
             // override for CIE
             $isCIEIdP = $this->isCIEKey($idp);
-            $l = $isCIEIdP? "3" : $l;
             $post = $isCIEIdP? true : $post;
-            $comparison = $isCIEIdP? \SAML2\Constants::COMPARISON_EXACT : \SAML2\Constants::COMPARISON_MINIMUM;
             
             $spidlevel = "https://www.spid.gov.it/SpidL" . $l;
             $binding = $post? \SAML2\Constants::BINDING_HTTP_POST : \SAML2\Constants::BINDING_HTTP_REDIRECT;
